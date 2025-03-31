@@ -1,1 +1,155 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:image" content="https://yyc.github.io/aff-awardco/preview.png">
+    <meta property="og:title" content="Leave a tip?">
+    <meta property="og:description" content="Show your appreciation for your support person.">
+
+    <title>Show your appreciation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        
+        body {
+            font-family: 'Helvetica', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .tip-container  {
+            width: 50%;
+            padding: 10em;
+        }
+
+         
+        .logo {
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        .logo img{
+            width: 20em;
+            max-width: 80%;
+            margin: auto;
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        h1,h2,h3 {
+            font-weight: normal;
+        }
+
+        p {
+            font-weight: 100;
+            font-size: 1em;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .button.tip {
+            width: 30%;
+
+            padding-top: 3em;
+            padding-bottom: 3em;
+
+            min-height: 7em;
+            
+        }
+
+        .button {
+            background-color: #4a4af4;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: center;
+
+            margin-top: 2em;
+            
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+    
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #2020ca;
+        }
+
+        @media (max-width: 80em) {
+            .tip-container {
+                width: 100%;
+            }
+
+            .flex-container {
+                display: block;
+            }
+            .button.tip {
+                display: block;
+                width: 100%;
+                margin-top: 1em;
+
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+
+                min-height: 2em;
+
+            } 
+          }
+
+    </style>
+</head>
+<body>
+    <div class="tip-container">
+
+        <div class="logo">
+            <img src="./aff.png"></h2>
+            <h3>Leave a tip?</h3>
+        </div>
+        <div class="flex-container">
+            <a href="https://affirm.awardco.com/recognize?programId=45369&programName=Affirmatives"  class="button tip">
+                <h2>1 Point</h2>
+            </a>
+            <a href="https://affirm.awardco.com/recognize?programId=45369&programName=Affirmatives"  class="button tip">
+                <h2>5 Points</h2>
+            </a>
+            <a href="https://affirm.awardco.com/recognize?programId=45369&programName=Affirmatives"  class="button tip">
+                <h2>10 Points</h2>
+            </a>
+        </div>
+        <a href="https://affirm.awardco.com/recognize?programId=49056&programName=Top+Banana+Engineering+Award">
+            <div class="button">
+                <h3>Give Banana 🍌</h3>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        // Simple JavaScript to handle the close button
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            document.querySelector('.tip-container').style.display = 'none';
+        });
+        
+        // Handle primary button click
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+            document.querySelector('.tip-container').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
